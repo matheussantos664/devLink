@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: white;
+     --bg-url: url(/assets/img/bg-mobile-light.jpg);
+    --stroke-color: rgba(255,255,255,0.5);
+    --surface-color: rgba(255,255,255,0.5);
+    --surface-color-hover: rgba(255,255,255,0.02);
+    --switch-bg-url: url(/svg/Sun.svg);
+}
+.light {
+    --text-color: black;
+    --bg-url: url(/assets/img/bg-mobile-light.jpg);
+    --stroke-color: rgba(0,0,0,0.5);
+    --surface-color: rgba(0,0,0,0.05);
+    --surface-color-hover: rgba(0,0,0,0.02);
+    --switch-bg-url: url(/svg/MoonStars.svg);
+}
+
+body {
+    background-image: url(../img/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    color: var(--text-color);
+}
+.redes-sociais{
+    text-align: center;
+    position: relative;
+bottom: -600px;}
+
+.container {
+    width: 360px;
+    height: 712px;
+    border: 1px solid rgb(87, 58, 15);
+    margin: 56px auto 0px;
+    display: block;
+    text-align: center;
+
+    padding-top: 56px;
+}
+
+.wrapper-profile {
+    text-align: center;
+}
+
+.wrapper-profile img {
+    width: 112px;
+    height: auto;
+}
+
+.wrapper-profile p {
+    font-weight: 500;
+    font-size: 16px;
+    list-style: 24px;
+}
+
+#links ul {
+    display: grid;
+    padding: 14px;
+
+}
+
+#links ul li {
+
+    list-style: none;
+    margin-bottom: 16px;
+
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    backdrop-filter: blur(15px);
+
+    height: 56px;
+
+    border: solid 2px gray;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#links ul li:hover{
+    border: solid 2px rgb(188, 188, 188);
+    background: linear-gradient(135deg, rgba(203, 203, 203, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+#links ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+
+
+}
+
+#links ul li a:hover{
+    color: #a30743;
+}
+
+
+.wrapper-switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    
+}
